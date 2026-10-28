@@ -40,7 +40,15 @@ This application is a functional, end-to-end prototype of a **Digital Twin Monit
 
 ## 🚀 Quick Start Guide
 
-### 1. Backend Server (FastAPI + SQLite)
+### 1. Streamlit Pure Python Deployment (1-Click Local or Cloud)
+Run the entire digital twin (frontend + simulation engine + database) from pure Python:
+```powershell
+streamlit run streamlit_app.py
+```
+- Web Application URL: `http://localhost:8501`
+- Cloud Deployable: Ready for 1-click deployment on **Streamlit Community Cloud** (point to `streamlit_app.py` or `app.py`).
+
+### 2. Backend Server (FastAPI + SQLite)
 Navigate to the `backend/` directory and run:
 ```powershell
 cd backend
@@ -49,7 +57,7 @@ python -m uvicorn main:app --host 127.0.0.1 --port 8000 --reload
 - API Base URL: `http://127.0.0.1:8000`
 - Interactive Swagger API Docs: `http://127.0.0.1:8000/docs`
 
-### 2. Frontend Application (React + Vite + Tailwind CSS)
+### 3. Frontend Application (React + Vite + Tailwind CSS)
 In a separate terminal, navigate to the `frontend/` directory and run:
 ```powershell
 cd frontend
